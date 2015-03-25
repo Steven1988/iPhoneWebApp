@@ -7,15 +7,17 @@ app.controller('myController', function($scope){
 
 	$scope.saved = localStorage.getItem('apps');
 	$scope.apps = (localStorage.getItem('apps')!==null) ? JSON.parse($scope.saved) : [ 
-		{ name: 'Settings', img: [ 'mailicon.png' ]},
-		{ name: 'Facebook', img: [ 'mailicon.png' ]},
-		{ name: 'Phonebook', img: [ 'mailicon.png' ]},
-		{ name: 'Twitter', img: [ 'mailicon.png' ]}
+
+	// fake data som jeg startede med til at opbygge mit array
+		{ name: 'Settings', img: [ 'img/mailicon.png' ]},
+		{ name: 'Facebook', img: [ 'img/mailicon.png' ]},
+		{ name: 'Phonebook', img: [ 'img/mailicon.png' ]},
+		{ name: 'Twitter', img: [ 'img/mailicon.png' ]}
 	];
 	localStorage.setItem('apps', JSON.stringify($scope.apps));
 	
 	$scope.addApp = function(){
-		$scope.apps.push({name:$scope.dAppName, img:['mailicon.png']});
+		$scope.apps.push({name:$scope.dAppName, img:['img/mailicon.png']});
 		$scope.dAppName = '';
 		localStorage.setItem('apps', JSON.stringify($scope.apps));
 		console.log($scope.dAppName + " added to the apps");
@@ -39,30 +41,4 @@ app.controller('myController', function($scope){
 
 });
 
-// var Programs = ["Settings", "Facebook", "Phonebook"];
-// var Apps = [		
-// 		"Settings": {
-// 			name: "Settings";
-// 		},
-// 		"Facebook": {
-// 			name: "Facebook";
-// 		},
-// 		"Phonebook": {
-// 			name: "Phonebook";
-// 		}
-// ];
-// var text = [];
-// for (i = 0; i < Apps.length; i++) {
-// 	text += "<li>" + Apps[i] + "</li>";
-// }
-// document.getElementById("demo").innerHTML = text;
-
-
-
-
-// function helloWorld() {
-// 	return "Hello World";
-// }
-
-// helloWorld();
 
