@@ -1,0 +1,57 @@
+.button {
+	width: 100px;
+	color: red;
+	height: 50px;
+}
+.iphone {
+	background-image: url(iPhone.png);
+	max-width: 320px;
+	height: 600px;
+}
+.screen-bg {
+	/*background-color: rgba(110,160,160,0.70);*/
+	background-image: url(blueback.jpg);
+
+	width: 260px;
+	height: 388px;
+	margin: 28px;
+	display: inline-block; 
+	margin-top: 106px;
+}
+
+.appBox {
+	padding: 5px;
+}
+
+.appicons {
+	display: inline-block;
+	margin-top: 5px;
+	width:100%;
+}
+.appname {
+	display: block;
+	vertical-align: bottom;
+	font-size: 11px;
+	text-align: center;
+
+}
+
+.deleteX {
+	width: 17px;
+	height: 17px;
+	background-color: lightgrey;
+	border-radius: 7px;
+	position: absolute;
+	right: 3;
+	top: 5;
+	border: 1px solid black;
+
+
+}
+.text-align-C {
+	text-align: center;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	color: white;
+}

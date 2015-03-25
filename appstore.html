@@ -1,0 +1,30 @@
+<html ng-app="iPhoneWebApp">
+	<head>
+		<title>iPhone Web App</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+		
+	</head>
+	<body ng-controller="myController">
+		
+		<div class="iphone">
+			<div class="screen-bg">
+				<a href="index.html" class="btn btn-success">Back</a>
+
+				<h3 class="text-align-C">Add a new app</h3>
+				<form action="" id="myform">
+				<label for="AppName"></label>
+					<input class="form-control" type="text" placeholder="Name of App" value="" ng-model="dAppName" required><br>
+					<button class="btn btn-success form-control" ng-click="addApp()">Add</button>
+				</form
+
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
